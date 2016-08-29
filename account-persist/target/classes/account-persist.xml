@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean/> definitions here -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:account-persist.properties"></property>
+	</bean>
+	<bean id="accountPersistService"
+		class="com.ivan.mvnbook.account.persist.service.impl.AccountPersistServiceImpl">
+		<property name="file" value="${persist.file}"></property>
+	</bean>
+</beans>
