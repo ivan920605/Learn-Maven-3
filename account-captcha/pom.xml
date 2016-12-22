@@ -45,9 +45,9 @@
 
 	<repositories>
 		<repository>
-			<id>nexus</id>
-			<name>Nexus</name>
-			<url>http://localhost:8081/nexus/content/groups/group_nexus/</url>
+			<id>sonatype-forge</id>
+			<name>Sonatype Forge</name>
+			<url>https://repository.sonatype.org/content/groups/forge/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
