@@ -5,6 +5,7 @@
 		<groupId>com.ivan.mvnbook.account</groupId>
 		<artifactId>account-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../account-parent/pom.xml</relativePath>
 	</parent>
 
 	<artifactId>account-captcha</artifactId>
@@ -15,10 +16,10 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.google.code.kaptcha</groupId>
-			<artifactId>kaptcha</artifactId>
-			<version>${kaptcha.version}</version>
-			<classifier>jdk15</classifier>
+				<groupId>com.google.code.kaptcha</groupId>
+				<artifactId>kaptcha</artifactId>
+				<version>${kaptcha.version}</version>
+				<classifier>jdk15</classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -42,12 +43,12 @@
 			<version>3.4</version>
 		</dependency>
 	</dependencies>
-
+	
 	<repositories>
 		<repository>
 			<id>sonatype-forge</id>
 			<name>Sonatype Forge</name>
-			<url>https://repository.sonatype.org/content/groups/forge/</url>
+			<url>http://repository.sonatype.org/content/groups/forge/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
